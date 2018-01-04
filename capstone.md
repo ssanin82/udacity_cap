@@ -21,7 +21,7 @@ Output:
 - Relevant quality measurements
 
 ### Datasets and Inputs
-20 tech stock tickers considered from [Yahoo! Finance](https://finance.yahoo.com) (MSFT, GOOGL, YHOO, NFLX, ADBE, TWTR, CSCO, IBM, INTC, AMD, AAPL, AMZN, ORCL, FB, SAP, HP, ACN, INFY, CTSH, EPAM).
+20 tech stock tickers to consider from [Yahoo! Finance](https://finance.yahoo.com) (MSFT, GOOGL, YHOO, NFLX, ADBE, TWTR, CSCO, IBM, INTC, AMD, AAPL, AMZN, ORCL, FB, SAP, HP, ACN, INFY, CTSH, EPAM).
 The information for the project will be limited to year 2017.
 
 ### Solution Statement
@@ -33,35 +33,18 @@ The model selected for the problem is neural network, its hyperparameters are th
 * number of units in hidden layer 2
 * activation function selection (sigmoid, relu)
 
-(additional may be added during implementation - like, online training vs batch learning and size of batch, etc)
+(additional hyperparameters may be added during implementation depending on time available - like, online training vs batch learning and size of batch, different types of neural networks, etc)
 
 *Output* described in problem statement.
 
 ### Benchmark Model
-As a benchmark linear prediction model is selected.
-
-TODO: provide details.
-
-_(approximately 1-2 paragraphs)_
-
-In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
+As a benchmark polynomial regression model is selected (linear or higher). The result is usually measured using coefficient of determination and MSE metrics.
 
 ### Evaluation Metrics
-_(approx. 1-2 paragraphs)_
-
-In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
+Both coefficient of determination and mean squared error can be used to measure and compare benchmark and solution models. Coefficient of determination will give a normalized value of error between 0 and 1, while mean squared error will give unnormalized error estimate, giving more weight to larger errors.
 
 ### Project Design
 _(approx. 1 page)_
 
 In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
 
------------
-
-**Before submitting your proposal, ask yourself. . .**
-
-- Does the proposal you have written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Solution Statement** and **Project Design**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your proposal?
-- Have you properly proofread your proposal to assure there are minimal grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
